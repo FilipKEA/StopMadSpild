@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{css/style.css}" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Danmark Mod Madspild</title>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    </style>
+</head>
+
+
+
+<body>
+<div class="navbar">
+    <div class="menu">
+        <a th:href="@{forbruger}" href="menu1.html">til forbrugeren</a>
+        <a th:href="@{virksomhed}" href="menu2.html">til virksomheden</a>
+        <a th:href="@{omOs}" href="menu3.html">om os</a>
+    </div>
+
+    <div class="logo">
+        <a th:href="@{/}" href="front.html"><h1>Danmark</h1><h1>Mod Madspild</h1></a>
+    </div>
+</div>
+
+<img th:src="@{images/madspildforside.png}" src="../static/images/madspildforside.png" alt="Madspild forside" width="1250" height="600">
+
+<div class="pictext">
+    <h2>"540.000 tons spiseligt mad bliver hvert år smidt ud i Danmark. I kroner svarer dette til mindst 8,4 milliarder. Madspillet sker både i de private husholdninger og i processen fra produktion til salg."</h2>
+    <a href="https://mfvm.dk/fileadmin/user_upload/FVM.dk/Dokumenter/Landbrug/Indsatser/Madspild/Faktaark/Faktaark_Madspild-i-Danmark_-juni-2011.pdf"><p>- Ministeriet for Fødevarer, Landbrug og Fiskeri</p></a>
+</div>
+<div class="main">
+    <p>I kampen mod madspild har vi hos organisationen Danmark Mod Madspild gjort en indsats for at informere forbrugerne om hvordan de kan minimere deres madspild i hjemmet. Vi har også værktøjer til at hjælpe virksomheder med at reducere deres madspild.</p>
+    <p>Klik i menuen foroven for at se mere!</p>
+</div>
+
+</body>
+</html>

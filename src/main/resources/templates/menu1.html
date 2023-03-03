@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{css/style.css}" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Til Forbrugeren</title>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="menu">
+        <a th:href="@{forbruger}" href="menu1.html">til forbrugeren</a>
+        <a th:href="@{virksomhed}" href="menu2.html">til virksomheden</a>
+        <a th:href="@{omOs}" href="menu3.html">om os</a>
+    </div>
+
+    <div class="logo">
+        <a th:href="@{/}" href="front.html"><h1>Danmark</h1><h1>Mod Madspild</h1></a>
+    </div>
+</div>
+
+<img th:src="@{images/madspildforside.png}" src="../static/images/tilforbrugeren.jpg" alt="Mad affald" width="1250" height="580">
+
+<div class="pictext">
+    <h1>5 tips til at reducere madspild i hjemmet</h1>
+</div>
+<div class="main">
+    <p>Madspild fra de private husholdninger udgør en stor del af det samlede madspild i Danmark. Derfor har vi her 5 råd til at reducere madspild i hjemmet</p>
+
+    <h3>1. Læg en madplan </h3>
+    <p>Planlæg dine måltider. På den måde undgår du impulskøb og ikke nok med at du spilder mindre mad, så sparer du også penge.</p>
+
+    <h3>2. Opbevar din mad korrekt</h3>
+    <p>Ved at opbevare din mad korrekt forlænger du holdbarheden af fødevaren, og dermed reducerer chancen for at det går til spilde.</p>
+
+    <h3>3. Brug dit madaffald.</h3>
+    <p>Istedet for at smide madrester væk, brug dem som kompost.</p>
+
+    <h3>4. Frys dine madrester.</h3>
+    <p>Hvis du ikke kan spise op, så frys dine madrester og brug dem eventuelt som en ingrediens i en anden ret.</p>
+
+    <h3>5. Start med de fødevarer som er tættest på deres udløbsdato.</h3>
+    <p>Hvis du ikke har lyst til at lægge madplan, så er dette også en god tommelfingerregel.</p>
+</div>
+
+</body>
+</html>

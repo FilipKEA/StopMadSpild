@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{css/style.css}" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Til Virksomheden</title>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="menu">
+        <a th:href="@{forbruger}" href="menu1.html">til forbrugeren</a>
+        <a th:href="@{virksomhed}" href="menu2.html">til virksomheden</a>
+        <a th:href="@{omOs}" href="menu3.html">om os</a>
+    </div>
+    <div class="logo">
+        <a th:href="@{/}" href="front.html"><h1>Danmark</h1><h1>Mod Madspild</h1></a>
+    </div>
+</div>
+<div class="main">
+    <img th:src="@{images/virksomhed.jpg}" src="../static/images/virksomhed.jpg" alt="Forretning" width="900" height="300">
+    <h1>Har du lyst til at minimere din organisations klimaaftryk?</h1>
+    <p>Kontakt os på madeupemail@stopmadspild.dk for en konsultation om hvordan vi kan hjælpe med at minimere din virksomheds madspild</p>
+</div>
+</body>
+</html>

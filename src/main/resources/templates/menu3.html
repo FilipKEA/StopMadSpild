@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{css/style.css}" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Om Os</title>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        html {
+            height: 101%;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <div class="menu">
+        <a th:href="@{forbruger}" href="menu1.html">til forbrugeren</a>
+        <a th:href="@{virksomhed}" href="menu2.html">til virksomheden</a>
+        <a th:href="@{omOs}" href="menu3.html">om os</a>
+    </div>
+    <div class="logo">
+        <a th:href="@{/}" href="front.html"><h1>Danmark</h1><h1>Mod Madspild</h1></a>
+    </div>
+</div>
+<img th:src="@{images/omos.jpg}" src="../static/images/omos.jpg" alt="Mark" width="1250" height="400">
+<div class="main">
+    <h1>Om os</h1>
+    <p>Organisationen Madspild mod Danmark blev stiftet i et forsøg på at bekæmpe madspild i Danmark, og dermed også mindske danmarks samlede klimaaftryk</p>
+
+    <h1>Vores mål</h1>
+    <p>Vores mål er at halvere danmarks madspild inden 2035, både for virksomheder, men også de private husstande.</p>
+
+</div>
+
+</body>
+</html>
