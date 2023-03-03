@@ -2,6 +2,7 @@ html {
     overflow-y: scroll;
 }
 .navbar {
+    z-index: 9999;
     position: fixed;
     top: 0;
     background-color: #e7e7e7;
